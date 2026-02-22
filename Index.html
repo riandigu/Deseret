@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title><!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Deseret Ltda. | Operador Logístico Nacional en Chile</title>
+
+<meta name="description" content="Deseret Ltda., fundada en 2008 y con base en Santiago de Chile, es un Operador Logístico Nacional especializado en logística portuaria, transporte carretero y carga refrigerada en todo Chile.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font-family:'Inter',sans-serif;
+background:#0f172a;
+color:white;
+line-height:1.6;
+scroll-behavior:smooth;
+}
+section{padding:100px 8%;}
+h2{font-size:2rem;margin-bottom:30px;}
+p{opacity:0.9;margin-bottom:15px;}
+
+/* NAVBAR */
+.navbar{
+position:fixed;
+width:100%;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(0,0,0,0.85);
+backdrop-filter:blur(8px);
+z-index:1000;
+}
+.logo{font-weight:800;font-size:1.3rem;}
+.nav-links{display:flex;}
+.nav-links a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:0.95rem;
+}
+.hamburger{display:none;font-size:26px;cursor:pointer;}
+
+/* HERO */
+.hero{
+height:100vh;
+background:url('https://images.pexels.com/photos/262353/pexels-photo-262353.jpeg') center/cover fixed no-repeat;
+display:flex;
+align-items:center;
+padding:0 8%;
+position:relative;
+}
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.4));
+}
+.hero-content{position:relative;max-width:750px;}
+.hero h1{
+font-size:3rem;
+font-weight:800;
+line-height:1.1;
+}
+
+/* BOTÓN TURQUESA */
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 35px;
+background:#14b8a6;
+color:white;
+font-weight:600;
+border-radius:40px;
+text-decoration:none;
+transition:0.3s;
+}
+.btn:hover{
+background:#0f766e;
+}
+
+/* SERVICES GRID */
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+.service{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+}
+.service img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+/* FOOTER */
+.footer{
+background:#020617;
+padding:50px 8%;
+font-size:0.9rem;
+opacity:0.85;
+}
+
+/* WHATSAPP TURQUESA */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#14b8a6;
+color:white;
+font-size:26px;
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+z-index:1000;
+transition:0.3s;
+}
+.whatsapp:hover{
+background:#0f766e;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.nav-links{
+position:absolute;
+top:70px;
+right:0;
+background:#0f172a;
+width:100%;
+flex-direction:column;
+text-align:center;
+display:none;
+padding:20px 0;
+}
+.nav-links a{margin:15px 0;}
+.nav-links.active{display:flex;}
+.hamburger{display:block;}
+.hero h1{font-size:2.2rem;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<div class="logo">Deseret Ltda.</div>
+<div class="nav-links" id="menu">
+<a href="#quienes">Quiénes Somos</a>
+<a href="#servicios">Servicios</a>
+<a href="#cobertura">Cobertura</a>
+<a href="#trabaja">Trabaja con Nosotros</a>
+<a href="#contacto">Contacto</a>
+</div>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+</div>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Operador Logístico Nacional en Chile</h1>
+<p>Coordinación estratégica de logística portuaria, transporte carretero, carga refrigerada y distribución en todo el territorio nacional.</p>
+<a href="#contacto" class="btn">Solicitar Evaluación</a>
+</div>
+</section>
+
+<section id="quienes">
+<h2>Quiénes Somos</h2>
+<p><strong>Deseret Ltda.</strong> fue fundada en 2008 y tiene su base oficial en Santiago de Chile.</p>
+<p>Operamos como Operador Logístico Nacional coordinando soluciones de transporte en todo el país, conectando puertos estratégicos como Iquique, Valparaíso, San Antonio y Talcahuano con rutas terrestres hacia el norte, centro y sur de Chile.</p>
+</section>
+
+<section id="servicios">
+<h2>Nuestros Servicios</h2>
+<div class="services">
+
+<div class="service">
+<img src="https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg">
+<h3>Logística Portuaria</h3>
+<p>Coordinación de carga desde y hacia los principales puertos del país.</p>
+</div>
+
+<div class="service">
+<img src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg">
+<h3>Transporte Carretero Nacional</h3>
+<p>Gestión integral de transporte terrestre en todo Chile.</p>
+</div>
+
+<div class="service">
+<img src="https://images.pexels.com/photos/4481327/pexels-photo-4481327.jpeg">
+<h3>Carga Refrigerada</h3>
+<p>Transporte con control de temperatura para productos que requieren cadena de frío.</p>
+</div>
+
+<div class="service">
+<img src="https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg">
+<h3>Distribución y E-commerce</h3>
+<p>Soluciones logísticas para distribución comercial y comercio electrónico.</p>
+</div>
+
+</div>
+</section>
+
+<section id="trabaja">
+<h2>Trabaja con Nosotros</h2>
+<p>Si eres transportista o empresa de transporte y deseas integrarte a nuestra red operativa, contáctanos.</p>
+</section>
+
+<section id="contacto">
+<h2>Contacto</h2>
+<p><strong>Email:</strong> contacto@deseretltda.cl</p>
+<p><strong>Teléfono / WhatsApp:</strong> +56 9 9412 4894</p>
+<p><strong>Ubicación:</strong> Santiago de Chile</p>
+<p><strong>Contacto:</strong> Ricardo Díaz</p>
+</section>
+
+<div class="footer">
+© 2026 Deseret Ltda. | Operador Logístico Nacional en Chile | Fundada en 2008
+</div>
+
+<a class="whatsapp" href="https://wa.me/56994124894?text=Hola%20quiero%20cotizar%20un%20servicio%20log%C3%ADstico" target="_blank">💬</a>
+
+<script>
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("active");
+}
+
+document.querySelectorAll('#menu a').forEach(link => {
+link.addEventListener('click', () => {
+document.getElementById("menu").classList.remove("active");
+});
+});
+</script>
+
+</body>
+</html> Ltda. | Operador Logístico <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Deseret Ltda. | Operador Logístico Nacional en Chile</title>
+
+<meta name="description" content="Deseret Ltda., fundada en 2008 y con base en Santiago de Chile, es un Operador Logístico Nacional especializado en logística portuaria, transporte carretero y carga refrigerada en todo Chile.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font-family:'Inter',sans-serif;
+background:#0f172a;
+color:white;
+line-height:1.6;
+scroll-behavior:smooth;
+}
+section{padding:100px 8%;}
+h2{font-size:2rem;margin-bottom:30px;}
+p{opacity:0.9;margin-bottom:15px;}
+
+/* NAVBAR */
+.navbar{
+position:fixed;
+width:100%;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(0,0,0,0.85);
+backdrop-filter:blur(8px);
+z-index:1000;
+}
+.logo{font-weight:800;font-size:1.3rem;}
+.nav-links{display:flex;}
+.nav-links a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:0.95rem;
+}
+.hamburger{display:none;font-size:26px;cursor:pointer;}
+
+/* HERO */
+.hero{
+height:100vh;
+background:url('https://images.pexels.com/photos/262353/pexels-photo-262353.jpeg') center/cover fixed no-repeat;
+display:flex;
+align-items:center;
+padding:0 8%;
+position:relative;
+}
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.4));
+}
+.hero-content{position:relative;max-width:750px;}
+.hero h1{
+font-size:3rem;
+font-weight:800;
+line-height:1.1;
+}
+
+/* BOTÓN TURQUESA */
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 35px;
+background:#14b8a6;
+color:white;
+font-weight:600;
+border-radius:40px;
+text-decoration:none;
+transition:0.3s;
+}
+.btn:hover{
+background:#0f766e;
+}
+
+/* SERVICES GRID */
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+.service{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+}
+.service img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+/* FOOTER */
+.footer{
+background:#020617;
+padding:50px 8%;
+font-size:0.9rem;
+opacity:0.85;
+}
+
+/* WHATSAPP TURQUESA */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#14b8a6;
+color:white;
+font-size:26px;
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+z-index:1000;
+transition:0.3s;
+}
+.whatsapp:hover{
+background:#0f766e;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.nav-links{
+position:absolute;
+top:70px;
+right:0;
+background:#0f172a;
+width:100%;
+flex-direction:column;
+text-align:center;
+display:none;
+padding:20px 0;
+}
+.nav-links a{margin:15px 0;}
+.nav-links.active{display:flex;}
+.hamburger{display:block;}
+.hero h1{font-size:2.2rem;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<div class="logo">Deseret Ltda.</div>
+<div class="nav-links" id="menu">
+<a href="#quienes">Quiénes Somos</a>
+<a href="#servicios">Servicios</a>
+<a href="#cobertura">Cobertura</a>
+<a href="#trabaja">Trabaja con Nosotros</a>
+<a href="#contacto">Contacto</a>
+</div>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+</div>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Operador Logístico Nacional en Chile</h1>
+<p>Coordinación estratégica de logística portuaria, transporte carretero, carga refrigerada y distribución en todo el territorio nacional.</p>
+<a href="#contacto" class="btn">Solicitar Evaluación</a>
+</div>
+</section>
+
+<section id="quienes">
+<h2>Quiénes Somos</h2>
+<p><strong>Deseret Ltda.</strong> fue fundada en 2008 y tiene su base oficial en Santiago de Chile.</p>
+<p>Operamos como Operador Logístico Nacional coordinando soluciones de transporte en todo el país, conectando puertos estratégicos como Iquique, Valparaíso, San Antonio y Talcahuano con rutas terrestres hacia el norte, centro y sur de Chile.</p>
+</section>
+
+<section id="servicios">
+<h2>Nuestros Servicios</h2>
+<div class="services">
+
+<div class="service">
+<img src="https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg">
+<h3>Logística Portuaria</h3>
+<p>Coordinación de carga desde y hacia los principales puertos del país.</p>
+</div>
+
+<div class="service">
+<img src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg">
+<h3>Transporte Carretero Nacional</h3>
+<p>Gestión integral de transporte terrestre en todo Chile.</p>
+</div>
+
+<div class="service">
+<img src="https://images.pexels.com/photos/4481327/pexels-photo-4481327.jpeg">
+<h3>Carga Refrigerada</h3>
+<p>Transporte con control de temperatura para productos que requieren cadena de frío.</p>
+</div>
+
+<div class="service">
+<img src="https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg">
+<h3>Distribución y E-commerce</h3>
+<p>Soluciones logísticas para distribución comercial y comercio electrónico.</p>
+</div>
+
+</div>
+</section>
+
+<section id="trabaja">
+<h2>Trabaja con Nosotros</h2>
+<p>Si eres transportista o empresa de transporte y deseas integrarte a nuestra red operativa, contáctanos.</p>
+</section>
+
+<section id="contacto">
+<h2>Contacto</h2>
+<p><strong>Email:</strong> contacto@deseretltda.cl</p>
+<p><strong>Teléfono / WhatsApp:</strong> +56 9 9412 4894</p>
+<p><strong>Ubicación:</strong> Santiago de Chile</p>
+<p><strong>Contacto:</strong> Ricardo Díaz</p>
+</section>
+
+<div class="footer">
+© 2026 Deseret Ltda. | Operador Logístico Nacional en Chile | Fundada en 2008
+</div>
+
+<a class="whatsapp" href="https://wa.me/56994124894?text=Hola%20quiero%20cotizar%20un%20servicio%20log%C3%ADstico" target="_blank">💬</a>
+
+<script>
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("active");
+}
+
+document.querySelectorAll('#menu a').forEach(link => {
+link.addEventListener('click', () => {
+document.getElementById("menu").classList.remove("active");
+});
+});
+</script>
+
+</body>
+</html> en Chile</title>
+
+<meta name="description" content="Deseret Ltda., fundada en 2008 y con base en Santiago de Chile, es un Operador Logístico Nacional especializado en logística portuaria, transporte carretero y carga refrigerada en todo Chile.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font-family:'Inter',sans-serif;
+background:#0f172a;
+color:white;
+line-height:1.6;
+scroll-behavior:smooth;
+}
+section{padding:100px 8%;}
+h2{font-size:2rem;margin-bottom:30px;}
+p{opacity:0.9;margin-bottom:15px;}
+
+/* NAVBAR */
+.navbar{
+position:fixed;
+width:100%;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(0,0,0,0.85);
+backdrop-filter:blur(8px);
+z-index:1000;
+}
+.logo{font-weight:800;font-size:1.3rem;}
+.nav-links{display:flex;}
+.nav-links a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:0.95rem;
+}
+.hamburger{display:none;font-size:26px;cursor:pointer;}
+
+/* HERO */
+.hero{
+height:100vh;
+background:url('https://images.pexels.com/photos/262353/pexels-photo-262353.jpeg') center/cover fixed no-repeat;
+display:flex;
+align-items:center;
+padding:0 8%;
+position:relative;
+}
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.4));
+}
+.hero-content{position:relative;max-width:750px;}
+.hero h1{
+font-size:3rem;
+font-weight:800;
+line-height:1.1;
+}
+
+/* BOTÓN TURQUESA */
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 35px;
+background:#14b8a6;
+color:white;
+font-weight:600;
+border-radius:40px;
+text-decoration:none;
+transition:0.3s;
+}
+.btn:hover{
+background:#0f766e;
+}
+
+/* SERVICES GRID */
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+.service{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+}
+.service img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+/* FOOTER */
+.footer{
+background:#020617;
+padding:50px 8%;
+font-size:0.9rem;
+opacity:0.85;
+}
+
+/* WHATSAPP TURQUESA */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#14b8a6;
+color:white;
+font-size:26px;
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+z-index:1000;
+transition:0.3s;
+}
+.whatsapp:hover{
+background:#0f766e;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.nav-links{
+position:absolute;
+top:70px;
+right:0;
+background:#0f172a;
+width:100%;
+flex-direction:column;
+text-align:center;
+display:none;
+padding:20px 0;
+}
+.nav-links a{margin:15px 0;}
+.nav-links.active{display:flex;}
+.hamburger{display:block;}
+.hero h1{font-size:2.2rem;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<div class="logo">Deseret Ltda.</div>
+<div class="nav-links" id="menu">
+<a href="#quienes">Quiénes Somos</a>
+<a href="#servicios">Servicios</a>
+<a href="#cobertura">Cobertura</a>
+<a href="#trabaja">Trabaja con Nosotros</a>
+<a href="#contacto">Contacto</a>
+</div>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+</div>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Operador Logístico Nacional en Chile</h1>
+<p>Coordinación estratégica de logística portuaria, transporte carretero, carga refrigerada y distribución en todo el territorio nacional.</p>
+<a href="#contacto" class="btn">Solicitar Evaluación</a>
+</div>
+</section>
+
+<section id="quienes">
+<h2>Quiénes Somos</h2>
+<p><strong>Deseret Ltda.</strong> fue fundada en 2008 y tiene su base oficial en Santiago de Chile.</p>
+<p>Operamos como Operador Logístico Nacional coordinando soluciones de transporte en todo el país, conectando puertos estratégicos como Iquique, Valparaíso, San Antonio y Talcahuano con rutas terrestres hacia el norte, centro y sur de Chile.</p>
+</section>
+
+<section id="servicios">
+<h2>Nuestros Servicios</h2>
+<div class="services">
+
+<div class="service">
+<img src="https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg">
+<h3>Logística Portuaria</h3>
+<p>Coordinación de carga desde y hacia los principales puertos del país.</p>
+</div>
+
+<div class="service">
+<img src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg">
+<h3>Transporte Carretero Nacional</h3>
+<p>Gestión integral de transporte terrestre en todo Chile.</p>
+</div>
+
+<div class="service">
+<img src="https://images.pexels.com/photos/4481327/pexels-photo-4481327.jpeg">
+<h3>Carga Refrigerada</h3>
+<p>Transporte con control de temperatura para productos que requieren cadena de frío.</p>
+</div>
+
+<div class="service">
+<img src="https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg">
+<h3>Distribución y E-commerce</h3>
+<p>Soluciones logísticas para distribución comercial y comercio electrónico.</p>
+</div>
+
+</div>
+</section>
+
+<section id="trabaja">
+<h2>Trabaja con Nosotros</h2>
+<p>Si eres transportista o empresa de transporte y deseas integrarte a nuestra red operativa, contáctanos.</p>
+</section>
+
+<section id="contacto">
+<h2>Contacto</h2>
+<p><strong>Email:</strong> contacto@deseretltda.cl</p>
+<p><strong>Teléfono / WhatsApp:</strong> +56 9 9412 4894</p>
+<p><strong>Ubicación:</strong> Santiago de Chile</p>
+<p><strong>Contacto:</strong> Jorge Eyraud</p>
+</section>
+
+<div class="footer">
+© 2026 Deseret Ltda. | Operador Logístico Nacional en Chile | Fundada en 2008
+</div>
+
+<a class="whatsapp" href="https://wa.me/56994124894?text=Hola%20quiero%20cotizar%20un%20servicio%20log%C3%ADstico" target="_blank">💬</a>
+
+<script>
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("active");
+}
+
+document.querySelectorAll('#menu a').forEach(link => {
+link.addEventListener('click', () => {
+document.getElementById("menu").classList.remove("active");
+});
+});
+</script>
+
+</body>
+</html>
